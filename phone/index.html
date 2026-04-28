@@ -45,6 +45,17 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="stylesheet" type="text/css" href="../css/site_global.css?crc=385285191"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-gabarit.css?crc=4096187157"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=4118054726" id="pagesheet"/>
+
+  <!-- Optimisation rendu de la texture papier :
+       Muse mobile utilisait fondgris-woknrolls.jpg (760×428) en cover,
+       ce qui pixelise. On force la grande version en repeat à taille
+       naturelle — net, léger, et le tiling reste invisible. -->
+  <style>
+    html.html{
+      background:#1a1a1a url("../images/fondgris-woknrolls2.jpg?crc=185353771") repeat center top scroll !important;
+      background-size: 700px auto !important;
+    }
+  </style>
     <!--HTML Widget code-->
    
 

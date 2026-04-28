@@ -159,6 +159,21 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=385285191"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-gabarit.css?crc=3916111419"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=30986901" id="pagesheet"/>
+
+  <!-- Optimisation rendu de la texture papier :
+       Muse impose background-size:cover sur une image 2048×1152, ce qui
+       l'étire et la pixelise sur les grands écrans. On revient à une
+       taille naturelle avec repeat — la texture est suffisamment uniforme
+       pour que le tiling reste invisible. -->
+  <style>
+    html.html{
+      background:#1a1a1a url("images/fondgris-woknrolls2.jpg?crc=185353771") repeat center top scroll !important;
+      background-size: 900px auto !important;
+    }
+    @media (min-width: 1400px){
+      html.html{ background-size: 1100px auto !important; }
+    }
+  </style>
     <!--HTML Widget code-->
    
 
