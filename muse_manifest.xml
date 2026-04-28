@@ -1,0 +1,57 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://wok-n-rolls.fr" resolutions="1x" timestamp="1724134848901">
+  <folder name="css">
+    <file name="site_global.css" crc="385285191"/>
+    <file name="master_a-gabarit.css" crc="3916111419" ref="index"/>
+    <file name="index.css" crc="30986901" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="outfit-light-webfont.woff" crc="4155146729"/>
+    <file name="outfit-light-webfont.eot" crc="4002916401"/>
+    <file name="outfit-light-webfont.svg" crc="302540342"/>
+    <file name="outfit-bold-webfont.woff" crc="14456137"/>
+    <file name="outfit-bold-webfont.eot" crc="532009500"/>
+    <file name="outfit-bold-webfont.svg" crc="172699826"/>
+    <file name="outfit-regular-webfont.woff" crc="3944101014"/>
+    <file name="outfit-regular-webfont.eot" crc="175980864"/>
+    <file name="outfit-regular-webfont.svg" crc="4278112825"/>
+  </folder>
+  <folder name="assets">
+    <file name="menunumerique-woknrolls.pdf" crc="52607168" seo="true" mt="1695193680000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:index"/>
+    <file name="museutils.js" crc="3939489907" ref="phone>index:index"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:index"/>
+    <file name="museconfig.js" crc="128606099" ref="phone>index:index"/>
+    <file name="jquery.watch.js" crc="522499760" ref="phone>index:index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="phone>index:index"/>
+    <file name="require.js" crc="4177726516" ref="phone>index:index"/>
+  </folder>
+  <folder name="images">
+    <file name="logo-woknrolls.svg" crc="161947832" seo="true" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo-woknrolls_poster_.png" crc="273938427" ref="phone>index"/>
+    <file name="logoblanc-paper34.svg" crc="3970129298" seo="true" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logoblanc-paper34_poster_.png" crc="50960925" ref="phone>index"/>
+    <file name="fondgris-woknrolls.jpg" crc="75230079" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="a-gabarit-favicon.ico" crc="527517689" ref="index"/>
+    <file name="fondgris-woknrolls2.jpg" crc="185353771" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-gabarit.css" crc="4096187157" ref="phone>index"/>
+      <file name="index.css" crc="4118054726" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="3845404468" seo="true" mt="1724134809686" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="4121772533" seo="true" mt="1724134653280" redirect="true"/>
+</manifest>
