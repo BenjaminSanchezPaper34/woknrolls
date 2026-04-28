@@ -160,19 +160,26 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="stylesheet" type="text/css" href="css/master_a-gabarit.css?crc=3916111419"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=30986901" id="pagesheet"/>
 
-  <!-- Optimisation rendu de la texture papier :
-       Muse impose background-size:cover sur une image 2048×1152, ce qui
-       l'étire et la pixelise sur les grands écrans. On revient à une
-       taille naturelle avec repeat — la texture est suffisamment uniforme
-       pour que le tiling reste invisible. -->
+  <!-- Texture papier en grain SVG (seamless, jamais pixelisé, taille adaptable)
+       + override overflow pour permettre le scroll vers la section carte
+       (Muse fixe parfois la hauteur du body au viewport). -->
   <style>
     html.html{
-      background:#1a1a1a url("images/fondgris-woknrolls2.jpg?crc=185353771") repeat center top scroll !important;
-      background-size: 900px auto !important;
+      background-color:#1a1a1a !important;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='3' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.95  0 0 0 0 0.95  0 0 0 0.16 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>") !important;
+      background-repeat: repeat !important;
+      background-attachment: fixed !important;
+      background-size: 260px 260px !important;
     }
-    @media (min-width: 1400px){
-      html.html{ background-size: 1100px auto !important; }
+    /* Permettre le scroll au-delà de #page (vers la section carte) */
+    html, body{
+      height:auto !important;
+      min-height:100vh;
+      overflow-y:auto !important;
+      overflow-x:hidden;
     }
+    #page{ min-height:100vh; height:auto !important; overflow:visible !important; }
+    #carte{ position:relative; z-index:5; }
   </style>
     <!--HTML Widget code-->
    
