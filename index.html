@@ -180,6 +180,33 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     }
     #page{ min-height:100vh; height:auto !important; overflow:visible !important; }
     #carte{ position:relative; z-index:5; }
+
+    /* On masque le footer Muse (placé au bas du viewport, pas de la page)
+       + on neutralise le verticalspacer. Un footer identique est recréé
+       en fin de document, après la section carte. */
+    #u316-bw{ display:none !important; }
+    .verticalspacer{ height:auto !important; min-height:0 !important; }
+
+    /* Footer custom (réplique visuelle du footer Muse) */
+    .site-footer{
+      text-align:center;
+      padding: 40px 24px calc(40px + env(safe-area-inset-bottom));
+      font-family:'__Outfit_5', "Outfit", Helvetica, Arial, sans-serif;
+      color:#FFFFFF;
+      letter-spacing:1px;
+      font-size:13px;
+    }
+    .site-footer__credit{
+      display:inline-flex; align-items:center; gap:10px;
+      font-weight:400;
+    }
+    .site-footer__credit img{ height:12px; width:auto; display:block; }
+    .site-footer__copyright{
+      margin-top:14px;
+      font-size:12px;
+      font-weight:300;
+      color:rgba(255,255,255,.7);
+    }
   </style>
     <!--HTML Widget code-->
    
@@ -384,10 +411,6 @@ to use and available for download at: http://adobemuseexpert.com/
   <section id="carte" aria-labelledby="carte-title">
 
     <h2 id="carte-title">La carte</h2>
-    <p class="carte-intro">
-      Spécialités japonaises et asiatiques à Saint-Cyr-sur-Mer. Sur place, à emporter et en livraison.
-      Ouvert tous les jours sauf le mercredi · 11h00–14h00 / 18h30–22h00 · Livraison à partir de 15&nbsp;€.
-    </p>
 
     <h3>Menus</h3>
     <p class="sub">Composés sur place</p>
@@ -667,6 +690,17 @@ to use and available for download at: http://adobemuseexpert.com/
     </div>
 
   </section>
+
+  <!-- Footer en pied de page réel -->
+  <footer class="site-footer">
+    <a class="site-footer__credit" href="http://paper34.fr" rel="noopener">
+      Réalisé par
+      <img src="images/logoblanc-paper34.svg?crc=3970129298" alt="Paper34"/>
+    </a>
+    <p class="site-footer__copyright">
+      WOKNROLLS &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Tous droits réservés
+    </p>
+  </footer>
 
   <!-- JS includes -->
   <script type="text/javascript">
