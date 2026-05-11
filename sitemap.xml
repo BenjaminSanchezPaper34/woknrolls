@@ -3,18 +3,18 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wok-n-rolls.fr/</loc>
+    <loc>https://www.wok-n-rolls.fr/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://wok-n-rolls.fr/phone/index.html"/>
+    <xhtml:link rel="alternate" media="only screen and (max-width: 370px)" href="https://www.wok-n-rolls.fr/phone/index.html"/>
     <image:image>
-      <image:loc>https://wok-n-rolls.fr/images/logo-woknrolls.svg</image:loc>
+      <image:loc>https://www.wok-n-rolls.fr/images/logo-woknrolls.svg</image:loc>
       <image:title>WoknRolls — Restaurant japonais à Saint-Cyr-sur-Mer</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://wok-n-rolls.fr/assets/menunumerique-woknrolls.pdf</loc>
+    <loc>https://www.wok-n-rolls.fr/assets/menunumerique-woknrolls.pdf</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
